@@ -28,6 +28,6 @@ h1 {
 
 @keyframes fall {
     to {
-        transform: translate3d(15vw, 105vh, 100vh) rotate(359deg);
+        transform: translateY(105vh) rotate(359deg);
     }
 }
