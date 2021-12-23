@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: #000818;
+}
+
+h1 {
+    color: darkgoldenrod;
+    font-family: 'Pushster', cursive;
+    font-size: 8vh;
+}
+
+.schnee {
+    position: absolute;
+    top: -20px;
+    color: white;
+    animation: fall 10s linear forwards;
+    user-select: none;
+}
+
+@keyframes fall {
+    to {
+        transform: translate3d(15vw, 105vh, 100vh) rotate(359deg);
+    }
+}
