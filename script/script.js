@@ -9,8 +9,10 @@ function letItSnow() {
     snowflake.style.opacity = Math.random();
     snowflake.style.filter = "blur(" + Math.random() * 3 + "px)";
 
-    setTimeout(() =>    {schneeflocke.remove();
-                         cnt = counter--;}, 15000 )
+    document.body.appendChild(snowflake);
+    setTimeout(() => {
+        snowflake.remove();
+    }, 15000);
 }
 
 setInterval(letItSnow, 15);
